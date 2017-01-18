@@ -1,0 +1,11 @@
+﻿---
+layout: default
+title: 你好，世界
+---
+<h2>{{ page.title }}</h2>
+<p>无限循环，关闭之后还会运行的ValueAnimator</p>
+<p>我们的app中有一个加载动画，是使用ValueAnimator实现的，最开始实现的同学估计也没有关注动画关闭后，是否还在执行？
+最近有同事反馈说app耗电，通过官方的battery hostian没有查出来，狂哭。。。。。  后面有同事通过trace看出来了，同时使用
+android studio中的monitor看出关闭之后，cpu仍然占有5%,通过trace展示出这个动画类还在执行，所以就有了今天的主题。
+从这个问题中，学习到了如何看耗电？如何查耗电？哈哈哈哈，算是长进么？</p>
+<p>{{ page.date | date_to_string }}</p>
