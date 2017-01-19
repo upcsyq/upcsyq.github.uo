@@ -1,0 +1,12 @@
+﻿---
+layout: default
+title: 你好，世界
+---
+<h2>{{ page.title }}</h2>
+<p>1.创建.git_credentials文件存储git用户名和密码</p>
+<p>windows下，打开git bash，进入c:\users\Adminstrator，
+使用touch .git_credentials 新建文件，然后在里面填写相关用户名字和密码，格式如下
+https://{username}:{password}@github.com，需要注意的是，特殊字符，如*等的输入</p>
+<p>2.添加git config内容</p>
+<p>执行命令git config --global credential.helper store</p>
+<p>{{ page.date | date_to_string }}</p>
